@@ -11,15 +11,16 @@ super + Escape
    	
    
 super + b
-    firefox
+  brave 
 
 super + e
 	thunar /home/nuhas/
-
 	
-
 alt + p
  rofi -show
+
+super + x
+	archlinux-logout
 
 # Application Keybindings
 
