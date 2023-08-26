@@ -95,7 +95,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_Return,      spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_Return,      spawn,          SHCMD("kitty tmux attach") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
