@@ -18,7 +18,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=9" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=9";
-static const char col_gray1[]       = "#000000";
+static const char col_gray1[]       = "#1f1f28";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#f9e2af";
 static const char col_gray4[]       = "#cfc9c2";
@@ -95,9 +95,12 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_Return,      spawn,          SHCMD("kitty tmux attach") },
+	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty -e tmux attach") },
+	{ MODKEY,                       XK_x,      spawn,          SHCMD("alacritty -e tmux") },
+	{ MODKEY,                       XK_b,      spawn,          SHCMD("chromium") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = dmenucmd } },
+	{ MODKEY|ShiftMask,             XK_Return, spawn,          SHCMD("rofi -show drun")},
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
