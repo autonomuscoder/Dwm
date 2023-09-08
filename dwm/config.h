@@ -18,11 +18,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=9" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=9";
-static const char col_gray1[]       = "#1f1f28";
+static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#f9e2af";
+static const char col_gray3[]       = "#ffffff";
 static const char col_gray4[]       = "#cfc9c2";
-static const char col_cyan[]        = "#313244";
+static const char col_cyan[]        = "#222222";
 static const char col_red[]        = "#f2cdcd";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -48,7 +48,7 @@ static Sp scratchpads[] = {
 
 /* tagging */
 // static const char *tags[] = { "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX" };
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { " ", " ", " ", " ", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -95,8 +95,7 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty -e tmux attach") },
-	{ MODKEY,                       XK_x,      spawn,          SHCMD("alacritty -e tmux") },
+	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("chromium") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
