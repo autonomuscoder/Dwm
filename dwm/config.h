@@ -98,6 +98,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
 	{ MODKEY,                       XK_b,      spawn,          SHCMD("chromium") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
+	{ MODKEY,                       XK_r,      spawn,          SHCMD("redshift -O 5000") },
+	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("redshift -x") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          SHCMD("rofi -show drun")},
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
