@@ -95,9 +95,9 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
-	{ MODKEY,                       XK_b,      spawn,          SHCMD("chromium") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
+	{ MODKEY,                       XK_Return,      spawn,          SHCMD("kitty") },
+	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("redshift -O 5000") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("redshift -x") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
