@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 3;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 3;       /* vert inner gap between windows */
@@ -23,7 +23,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#ffffff";
 static const char col_gray4[]       = "#cfc9c2";
 static const char col_cyan[]        = "#24283b";
-static const char col_red[]        = "#f2cdcd";
+static const char col_red[]        = "#cba6f7";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
