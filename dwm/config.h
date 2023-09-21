@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 3;        /* border pixel of windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const unsigned int gappih    = 3;       /* horiz inner gap between windows */
 static const unsigned int gappiv    = 3;       /* vert inner gap between windows */
@@ -95,9 +95,9 @@ static const char *termcmd[]  = { "kitty", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_Return,      spawn,          SHCMD("kitty") },
-	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("pcmanfm") },
+	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
+	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave-browser") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("redshift -O 5000") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("redshift -x") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("flameshot gui") },
