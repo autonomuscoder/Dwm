@@ -1,4 +1,4 @@
 # dwm-void
 My suckless dotfiles
 
-![dwm2](https://github.com/autonomuscoder/Dwm/assets/112854891/c8455604-53aa-473c-93c9-78727d33af3a)
+![dwm3](https://github.com/autonomuscoder/Dwm/assets/112854891/52353a09-8323-4392-8fde-cbabb24d7345)
