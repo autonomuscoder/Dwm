@@ -3,10 +3,10 @@
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int gappih    = 3;       /* horiz inner gap between windows */
-static const unsigned int gappiv    = 3;       /* vert inner gap between windows */
-static const unsigned int gappoh    = 3;       /* horiz outer gap between windows and screen edge */
-static const unsigned int gappov    = 3;       /* vert outer gap between windows and screen edge */
+static const unsigned int gappih    = 5;       /* horiz inner gap between windows */
+static const unsigned int gappiv    = 5;       /* vert inner gap between windows */
+static const unsigned int gappoh    = 5;       /* horiz outer gap between windows and screen edge */
+static const unsigned int gappov    = 5;       /* vert outer gap between windows and screen edge */
 static const int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
 
 static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
@@ -22,7 +22,8 @@ static const char col_gray1[]       = "#121212";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#ffffff";
 static const char col_gray4[]       = "#cfc9c2";
-static const char col_cyan[]        = "#24283b";
+//static const char col_cyan[]        = "#24283b";
+static const char col_cyan[]        = "#2e383c";
 static const char col_red[]        = "#cba6f7";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -96,8 +97,8 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
-	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave-browser") },
-	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
+	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave") },
+	{ MODKEY,                       XK_e,      spawn,          SHCMD("pcmanfm") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("redshift -O 5000") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("redshift -x") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("flameshot gui") },
