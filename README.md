@@ -1,4 +1,4 @@
 # Dwm
 My suckless dotfiles
 
-![dwm](https://github.com/autonomuscoder/Dwm/assets/112854891/691c82f5-a331-41f6-8e1e-f39c3745b284)
+![dwm2](https://github.com/autonomuscoder/Dwm/assets/112854891/88a42613-b6ef-463d-a217-673b116c2969)
