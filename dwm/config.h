@@ -18,12 +18,12 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=10" };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
-static const char col_gray1[]       = "#121212";
+static const char col_gray1[]       = "#0c0e0f";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#ffffff";
 static const char col_gray4[]       = "#cfc9c2";
 //static const char col_cyan[]        = "#24283b";
-static const char col_cyan[]        = "#191919";
+static const char col_cyan[]        = "#232526";
 static const char col_red[]        = "#2e383c";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -69,6 +69,7 @@ static const Rule rules[] = {
 static const float mfact     = 0.5; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int attachbelow = 1;    /* 1 means attach after the currently active window */
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
@@ -97,11 +98,12 @@ static const char *termcmd[]  = { "kitty", NULL };
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_Return,      spawn,          SHCMD("alacritty") },
-	{ MODKEY,                       XK_b,      spawn,          SHCMD("qutebrowser") },
+	{ MODKEY,                       XK_b,      spawn,          SHCMD("brave-browser") },
 	{ MODKEY,                       XK_e,      spawn,          SHCMD("thunar") },
 	{ MODKEY,                       XK_r,      spawn,          SHCMD("redshift -O 5000") },
 	{ MODKEY|ShiftMask,             XK_r,      spawn,          SHCMD("redshift -x") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("flameshot gui") },
+	{ MODKEY,                       XK_x,      spawn,          SHCMD("/home/xero/bin/./power") },
 	{ MODKEY|ControlMask,           XK_Return,      spawn,          {.v = spcmd1 } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          SHCMD("rofi -show drun")},
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
