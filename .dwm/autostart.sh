@@ -1,11 +1,8 @@
 # Autostart applications
-/usr/libexec/polkit-gnome-authentication-agent-1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 slstatus &
 nitrogen --restore; sleep 1; 
-picom --experimental-backends &
+picom --config ~/.config/picom/picom.conf &
 numlockx on &
-nm-applet &
-volumeicon &
 dunst &
-blueman-applet &
-cbatticon &
+xfce4-power-manager &
