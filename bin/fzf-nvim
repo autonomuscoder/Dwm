@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Define your terminal emulator
+terminal_emulator="alacritty"  # Replace with your preferred terminal emulator
+
+# Use fzf to interactively select a file
+selected_file=$($terminal_emulator -e sh -c "fzf --height=40% --reverse --preview='bat --color=always --line-range :500 {}'")
+
+# Check if a file was selected
+if [ -n "$selected_file" ]; then
+    # Start a new tmux session and open neovim with the selected file
+    tmux new-session -d -s my_session "nvim '$selected_file'"
+    
+    # Attach to the new tmux session
+     terminal_emulator -e tmux attach-session -t my_session
+fi

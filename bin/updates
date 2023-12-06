@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Check for updates and count the available updates
+update_count=$(checkupdates | wc -l)
+
+if [ "$update_count" -gt 0 ]; then
+    echo -e "$update_count updates "
+else
+    echo -e "up-to-date "
+fi
+

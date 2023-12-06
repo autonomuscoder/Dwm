@@ -1,5 +1,9 @@
 # .bashrc
 
+export OPENAI_API_KEY="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"
+export PATH="/opt/lampp/:$PATH"
+export PATH="/home/xero/bin/:$PATH"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -13,6 +17,7 @@ alias ls='ls --color=auto'
 		alias nfetch='neofetch --ascii_distro arch'
 		alias tx='tmux'
 		alias txa='tmux attach'
+    alias ff='fd --type f --hidden --exclude .git | fzf-tmux -p | xargs nvim'
 
 ### Debian ###
     alias install='sudo apt install --no-install-recommends'
@@ -47,4 +52,6 @@ eval "$(starship init bash)"
 # Zoxide
 eval "$(zoxide init bash)"
 
-colorscript -r
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

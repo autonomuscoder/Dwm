@@ -1,0 +1,2 @@
+#!/bin/sh 
+printf "%s" "$(date +"%b%d- %R"| sed 's/  / /g')"
