@@ -1,4 +1,4 @@
 # Dwm
-My suckless dotfiles
+My <i>suckless</i> dotfiles
 
-![dwm](https://github.com/autonomuscoder/Dwm/assets/112854891/7b64445b-4e33-4b64-b5e5-6ee2a6295f86)
+![2024-02-21_15-58](https://github.com/autonomuscoder/Dwm/assets/112854891/b7a6818a-d270-4052-89ef-501b178b0621)
