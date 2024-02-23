@@ -6,34 +6,34 @@
 
 ## Import files (Colors, Fonts, Etc)
 import:
-  - ~/.config/alacritty/nord.yml
+  - ~/.config/alacritty/solarized_dark.yaml
   - ~/.config/alacritty/fonts.yml
 
 ## Set environment variables
 env:
   TERM: alacritty
-  WINIT_X11_SCALE_FACTOR: '1.0'
+  WINIT_X11_SCALE_FACTOR: "1.0"
 
 ## Terminal window settings
 window:
   dimensions:
-    columns: 82
-    lines: 23
+    columns: 105
+    lines: 25
 
   padding:
     x: 10
     y: 10
 
-  decorations: full
+  decorations: none
   startup_mode: Windowed
   dynamic_title: true
 
-## scrolling
+  ## scrolling
   history: 10000
   multiplier: 3
 
-## Background opacity
-  opacity: 0.8
+  ## Background opacity
+  opacity: 0.5
 
 ## Cursor
 cursor:
@@ -45,9 +45,8 @@ cursor:
 
 ## Live config reload
 live_config_reload: true
-
 ## Shell
-#shell:
-#  program: /bin/zsh
+shell:
+  program: /bin/fish
 #  args:
 #    - --login
