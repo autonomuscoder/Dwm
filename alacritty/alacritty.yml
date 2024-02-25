@@ -6,7 +6,7 @@
 
 ## Import files (Colors, Fonts, Etc)
 import:
-  - ~/.config/alacritty/solarized_dark.yaml
+  - ~/.config/alacritty/NeoSolarized-dark.yml
   - ~/.config/alacritty/fonts.yml
 
 ## Set environment variables
@@ -33,7 +33,7 @@ window:
   multiplier: 3
 
   ## Background opacity
-  opacity: 0.5
+  opacity: 0.6
 
 ## Cursor
 cursor:
